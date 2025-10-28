@@ -11,6 +11,8 @@ import RetirementVisa from "./pages/services/applications/RetirementVisa"
 import BusinessVisa from "./pages/services/applications/BusinessVisa"
 import WorkVisa from "./pages/services/applications/WorkVisa"
 import RelativeVisa from "./pages/services/applications/RelativeVisa"
+import Contact from "./pages/Contact"
+import EligibilityTest from "./pages/EligibilityTest"
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about-us" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="eligibility-assesment" element={<EligibilityTest />} />
           <Route path="services/visa-application" element={<VisaApplication />} />
           <Route path="services/visa-application/visitor-visa" element={<VisitorVisa />} />
           <Route path="services/visa-application/study-visa" element={<StudyVisa />} />
