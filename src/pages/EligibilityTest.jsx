@@ -44,7 +44,66 @@ const EligibilityTest = () => {
                 </motion.p>
             </div>
             <div className='px-[60px] py-[40px] bg-gray-50'>
-
+                <form action="" className='bg-white shadow-md p-[40px]'>
+                    <h1 className='text-[#002e5a] text-2xl font-semibold text-center mb-[30px]'>You’re one step closer…</h1>
+                    <div className='grid grid-cols-2 gap-4 mb-5'>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">First Name<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Last Name<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Phone<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Email<span className='text-red-500'>*</span></label>
+                            <input type="email" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Number of Children<span className='text-red-500'>*</span></label>
+                            <input type="number" min={0} className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Date Of Birth<span className='text-red-500'>*</span></label>
+                            <input type="date" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Current Country of Residence<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Nationality<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Desired Destination<span className='text-red-500'>*</span></label>
+                            <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Desired Destination<span className='text-red-500'>*</span></label>
+                            <select name="" id="" className='border border-gray-200 rounded-md p-1 outline-none'>
+                                <option value="">Study Visa</option>
+                                <option value="">Work Visa</option>
+                                <option value="">Business Visa</option>
+                                <option value="">Medical Visa</option>
+                                <option value="">Visitor Visa</option>
+                                <option value="">Relative Visa</option>
+                                <option value="">Retirement Visa</option>
+                            </select>
+                        </div>
+                        <div className='flex flex-col gap-2 col-span-2'>
+                            <label className='text-gray-500 font-semibold' htmlFor="">Any requests or something you want us to know?</label>
+                            <textarea name="" id="" rows={6} className='border border-gray-200 rounded-md p-1 outline-none'></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button onClick={() => { }} className='bg-[#002e5a] px-4 py-1 rounded-sm text-white cursor-pointer hover:bg-[#fdb930] duration-300 transition-all'>SUBMIT</button>
+                    </div>
+                </form>
             </div>
         </div>
     )
