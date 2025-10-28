@@ -83,12 +83,12 @@ const Home = () => {
                 <div className="absolute inset-0 bg-[#002e5a]/80"></div>
 
                 {/* Hero Text */}
-                <div className="absolute inset-0 flex flex-col justify-center items-start px-[60px]">
+                <div className="absolute inset-0 flex flex-col justify-center items-start sm:px-[60px] px-[30px]">
                     <motion.p
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-                        className="text-xl md:text-xl text-[#fdb930] max-w-2xl uppercase"
+                        className="sm:text-xl text-lg md:text-xl text-[#fdb930] max-w-2xl uppercase"
                     >
                         Wealth Bridge Advisory Limited
                     </motion.p>
@@ -96,7 +96,7 @@ const Home = () => {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
-                        className="text-6xl md:text-5xl font-bold text-white mb-4 uppercase"
+                        className="sm:text-6xl text-2xl md:text-5xl font-bold text-white mb-4 uppercase"
                     >
                         VISA APPLICATIONS Made simple & secure
                     </motion.h1>
@@ -110,7 +110,7 @@ const Home = () => {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-                        className="text-lg md:text-xl text-gray-200 max-w-2xl mb-[20px]"
+                        className="sm:text-lg md:text-xl text-gray-200 max-w-2xl mb-[20px]"
                     >
                         We simplify your visa and immigration journey — with expert support
                         and unmatched professionalism.
@@ -119,10 +119,10 @@ const Home = () => {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.7, ease: "easeOut", delay: 0.3 }}
-                        className="flex items-center gap-4"
+                        className="flex sm:flex-row flex-col items-center gap-4"
                     >
-                        <button onClick={() => navigate('about-us')} className="uppercase px-4 py-1 border-2 border-[#fdb930] text-white hover:bg-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg">Learn More</button>
-                        <button onClick={() => navigate('services')} className="uppercase px-4 py-1 bg-[#fdb930] text-white hover:bg-transparent hover:border-2 hover:border-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg">Consultation Services</button>
+                        <button onClick={() => navigate('about-us')} className="uppercase px-4 py-1 border-2 border-[#fdb930] text-white hover:bg-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg sm:w-fit w-full">Learn More</button>
+                        <button onClick={() => navigate('services')} className="uppercase px-4 py-1 bg-[#fdb930] text-white hover:bg-transparent hover:border-2 hover:border-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg sm:w-fit w-full">Consultation Services</button>
                     </motion.div>
                 </div>
 
@@ -137,10 +137,10 @@ const Home = () => {
                     ))}
                 </div>
             </div>
-            <div className="bg-[#fdb930] px-[60px] py-[40px] flex justify-between items-center">
-                <div className="flex flex-col gap-1 w-[60%]">
-                    <h1 className="font-bold text-white text-3xl">Complementary Eligibility Assessment</h1>
-                    <p className="text-gray-500 text-sm">Complete our assessment to get free and unbiased feedback about your visa options,
+            <div className="bg-[#fdb930] px-[60px] py-[40px] flex flex-col sm:gap-0 gap-6 sm:flex-row justify-between items-center">
+                <div className="flex flex-col gap-1 sm:w-[60%]">
+                    <h1 className="font-bold text-white sm:text-3xl text-xl sm:text-start text-center">Complementary Eligibility Assessment</h1>
+                    <p className="text-gray-500 text-sm sm:text-start text-center">Complete our assessment to get free and unbiased feedback about your visa options,
                         eligibility and guidance about your next steps</p>
                 </div>
                 <div>
@@ -150,7 +150,7 @@ const Home = () => {
             <div className="bg-white p-[60px]">
                 <div className="flex gap-2 flex-col mb-[40px]">
                     <p className="uppercase text-[#fdb930] text-[12px] border border-gray-200 rounded-xl w-fit px-2 py-1">About Wealth Bridge Advisory Limited</p>
-                    <h1 className="text-3xl font-semibold text-[#414c79]">We drive successful visa and residency permit applications</h1>
+                    <h1 className="sm:text-3xl text-xl font-semibold text-[#414c79]">We drive successful visa and residency permit applications</h1>
                     <motion.hr
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ const Home = () => {
                 <div>
                     <h1 className="text-[#414c79] text-xl mb-[30px]">Visa Options</h1>
                     {/* Visa options */}
-                    <div className="grid grid-cols-3 gap-6 mb-[30px]">
+                    <div className="sm:grid sm:grid-cols-3 flex flex-col gap-6 mb-[30px]">
                         {visaOptions.map((visa, index) => (
                             <a
                                 key={index}
@@ -191,13 +191,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative p-[60px] h-[500px]" style={{ backgroundImage: `url(${visaImg})`, backgroundAttachment: 'fixed', backgroundSize: 'cover' }}>
+            <div className="relative p-[60px] sm:h-[500px] h-[800px]" style={{ backgroundImage: `url(${visaImg})`, backgroundAttachment: 'fixed', backgroundSize: 'cover' }}>
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/70"></div>
                 <div className="flex flex-col justify-center gap-4 absolute inset-0">
                     <div className="flex flex-col gap-2 justify-center items-center mb-[40px]">
                         <p className="border rounded-xl border-gray-200 px-4 py-1 text-[#fdb930] text-sm w-fit font-semibold">OUR CONSULTATION PROCESS</p>
-                        <h1 className="text-3xl font-semibold text-white">Applying for your Visa has never been this easy</h1>
+                        <h1 className="sm:text-3xl text-xl font-semibold text-white">Applying for your Visa has never been this easy</h1>
                         <motion.hr
                             initial={{ opacity: 0, y: 60 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -205,8 +205,8 @@ const Home = () => {
                             className="text-[#fdb930] bg-[#fdb930] w-[80px] h-1"
                         />
                     </div>
-                    <div className="grid grid-cols-4 gap-6 px-[60px] text-white mb-4">
-                        <div className="flex gap-4">
+                    <div className="sm:grid sm:grid-cols-4 flex flex-col items-center gap-6 px-[60px] text-white mb-4">
+                        <div className="flex sm:flex-row flex-col sm:items-start items-center gap-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 60 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -215,12 +215,12 @@ const Home = () => {
                             >
                                 <Check color="#fdb930" />
                             </motion.div>
-                            <div className="flex flex-col gap-2 text-white">
+                            <div className="flex flex-col sm:items-start items-center gap-2 text-white">
                                 <h1 className="font-bold text-lg">Step 1</h1>
                                 <p>Complete our eligibility check.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex sm:flex-row flex-col sm:items-start items-center gap-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 60 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -229,12 +229,12 @@ const Home = () => {
                             >
                                 <Check color="#fdb930" />
                             </motion.div>
-                            <div className="flex flex-col gap-2 text-white">
+                            <div className="flex flex-col sm:items-start items-center gap-2 text-white">
                                 <h1 className="font-bold text-lg">Step 2</h1>
                                 <p>Upload your documents.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex sm:flex-row flex-col sm:items-start items-center gap-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 60 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -243,12 +243,12 @@ const Home = () => {
                             >
                                 <Check color="#fdb930" />
                             </motion.div>
-                            <div className="flex flex-col gap-2 text-white">
+                            <div className="flex flex-col sm:items-start items-center gap-2 text-white">
                                 <h1 className="font-bold text-lg">Step 3</h1>
                                 <p>Submit your visa application.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex sm:flex-row flex-col sm:items-start items-center gap-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 60 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -257,7 +257,7 @@ const Home = () => {
                             >
                                 <Check color="#fdb930" />
                             </motion.div>
-                            <div className="flex flex-col gap-2 text-white">
+                            <div className="flex flex-col sm:items-start items-center gap-2 text-white">
                                 <h1 className="font-bold text-lg">Step 4</h1>
                                 <p>Collect your processed visa.</p>
                             </div>
@@ -272,7 +272,7 @@ const Home = () => {
             <div className="bg-white p-[60px]">
                 <div className="flex gap-2 flex-col mb-[40px]">
                     <p className="uppercase text-[#fdb930] text-[12px] border border-gray-200 rounded-xl w-fit px-2 py-1">Why Use Wealth Bridge Advisory Limited</p>
-                    <h1 className="text-3xl font-semibold text-[#414c79]">Quick and efficient results</h1>
+                    <h1 className="sm:text-3xl text-xl font-semibold text-[#414c79]">Quick and efficient results</h1>
                     <motion.hr
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -281,11 +281,11 @@ const Home = () => {
                     />
                 </div>
                 <p className="mb-[30px]">Immigrating can seem like a daunting, time-consuming task. This is why you need experienced consultants and a simple application process. Visa Immigration SA provides all of this and more.</p>
-                <div className="flex justify-between">
-                    <div className="w-[50%] h-[200px]">
-                        <img src={business} alt="image4" className="w-[70%] h-full object-cover" />
+                <div className="flex sm:flex-row flex-col sm:justify-between sm:gap-0 gap-6">
+                    <div className="sm:w-[50%] h-[200px] sm:block hidden">
+                        <img src={business} alt="image4" className="sm:w-[70%] w-full h-full object-cover" />
                     </div>
-                    <ul className="flex flex-col gap-4 w-[50%]">
+                    <ul className="flex flex-col gap-4 sm:w-[50%]">
                         <li className="flex gap-4">
                             <CircleCheck color="#fdb930" />
                             Professional, competent and timely advice
@@ -309,9 +309,9 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
-            <div className="bg-[#fdb930] px-[60px] py-[40px] flex justify-between items-center">
-                <div className="flex flex-col gap-1 w-[60%]">
-                    <h1 className="font-bold text-white text-3xl">Free Eligibility Assessment</h1>
+            <div className="bg-[#fdb930] px-[60px] py-[40px] flex sm:flex-row flex-col sm:gap-0 gap-6 sm:justify-between items-center">
+                <div className="flex flex-col gap-1 sm:w-[60%]">
+                    <h1 className="font-bold text-white sm:text-3xl text-xl">Free Eligibility Assessment</h1>
                 </div>
                 <div>
                     <button onClick={() => navigate('eligilibity-assesment')} className="px-10 py-1 bg-white rounded-sm hover:bg-[#002e5a] cursor-pointer hover:text-white transition-all duration-300">GET STARTED</button>

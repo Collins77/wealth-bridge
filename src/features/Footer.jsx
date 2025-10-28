@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='px-[60px] pt-[40px] bg-[#002e5a]'>
-        <div className='grid grid-cols-4 gap-6 mb-4'>
+        <div className='sm:grid sm:grid-cols-4 flex flex-col gap-6 mb-4'>
             <div className='col-span-2 text-white'>
                 <h1 className='font-bold text-lg mb-2'>Wealth Bridge Advisory Limited</h1>
                 <p className='text-gray-200 mb-3'>We'll assist you with all Visa Applications, Permit Applications and Immigration Services.</p>
