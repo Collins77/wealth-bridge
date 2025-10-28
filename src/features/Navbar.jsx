@@ -18,9 +18,13 @@ const Navbar = () => {
       title: "Visa Application Services",
       link: "/services/visa-application",
       sub: [
-        { name: "General Information", link: "/services/visa-application/general-information" },
-        { name: "Visa Application Fee Payment", link: "/services/visa-application/fee-payment" },
-        { name: "Application Submission", link: "/services/visa-application/submission" },
+        { name: "Visitor Visa", link: "/services/visa-application/visitor-visa" },
+        { name: "Medical Treatment Visa", link: "/services/visa-application/medical-treatment-visa" },
+        { name: "Study Visa", link: "/services/visa-application/study-visa" },
+        { name: "Work Visa", link: "/services/visa-application/work-visa" },
+        { name: "Business Visa", link: "/services/visa-application/business-visa" },
+        { name: "Retirement Visa", link: "/services/visa-application/retirement-visa" },
+        { name: "Relative Visa", link: "/services/visa-application/relative-visa" },
       ],
     },
     {
