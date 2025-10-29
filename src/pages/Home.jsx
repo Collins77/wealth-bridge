@@ -121,8 +121,8 @@ const Home = () => {
                         transition={{ duration: 1.7, ease: "easeOut", delay: 0.3 }}
                         className="flex sm:flex-row flex-col items-center gap-4"
                     >
-                        <button onClick={() => navigate('about-us')} className="uppercase px-4 py-1 border-2 border-[#fdb930] text-white hover:bg-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg sm:w-fit w-full">Learn More</button>
-                        <button onClick={() => navigate('services/visa-application')} className="uppercase px-4 py-1 bg-[#fdb930] text-white hover:bg-transparent hover:border-2 hover:border-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm text-lg sm:w-fit w-full">Consultation Services</button>
+                        <button onClick={() => navigate('about-us')} className="uppercase px-4 py-1 border-2 border-[#fdb930] text-white hover:bg-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm sm:text-lg text-sm sm:w-fit w-full">Learn More</button>
+                        <button onClick={() => navigate('services/visa-application')} className="uppercase px-4 py-1 bg-[#fdb930] text-white hover:bg-transparent hover:border-2 hover:border-[#fdb930] cursor-pointer duration-300 transition-all rounded-sm sm:text-lg text-sm sm:w-fit w-full">Consultation Services</button>
                     </motion.div>
                 </div>
 

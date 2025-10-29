@@ -32,27 +32,27 @@ const Footer = () => {
                 <ul className='text-white flex flex-col gap-2'>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Visitor Visa</a>
+                        <a href="/services/visa-application/visitor-visa" className='hover:text-[#fdb930] transition-all duration-300'>Visitor Visa</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Medical Treatment Visa</a>
+                        <a href="/services/visa-application/medical-visa" className='hover:text-[#fdb930] transition-all duration-300'>Medical Treatment Visa</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Study Visa</a>
+                        <a href="/services/visa-application/study-visa" className='hover:text-[#fdb930] transition-all duration-300'>Study Visa</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Work Visa</a>
+                        <a href="/services/visa-application/work-visa" className='hover:text-[#fdb930] transition-all duration-300'>Work Visa</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Business Visa</a>
+                        <a href="/services/visa-application/business-visa" className='hover:text-[#fdb930] transition-all duration-300'>Business Visa</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Retirement Visa</a>
+                        <a href="/services/visa-application/retirement-visa" className='hover:text-[#fdb930] transition-all duration-300'>Retirement Visa</a>
                     </li>
                 </ul>
             </div>
@@ -61,15 +61,15 @@ const Footer = () => {
                 <ul className='text-white flex flex-col gap-2'>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Eligibility Check</a>
+                        <a href="/eligibility-assesment" className='hover:text-[#fdb930] transition-all duration-300'>Eligibility Check</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>Contact Us</a>
+                        <a href="/contact" className='hover:text-[#fdb930] transition-all duration-300'>Contact Us</a>
                     </li>
                     <li className='flex items-center gap-4'>
                         <div className='w-2 h-2 rounded-full bg-[#fdb930]'></div>
-                        <a href="" className='hover:text-[#fdb930] transition-all duration-300'>About Us</a>
+                        <a href="/about" className='hover:text-[#fdb930] transition-all duration-300'>About Us</a>
                     </li>
                 </ul>
             </div>
