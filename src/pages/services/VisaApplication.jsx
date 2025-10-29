@@ -129,7 +129,7 @@ const VisaApplication = () => {
                 <p className='text-center text-gray-500 w-[80%]'>Start by completing our online eligibility check. When we receive your information, we will provide you with guidance about the most suitable South African visa option.</p>
                 <button onClick={() => navigate('eligibility-test')} className='bg-[#fdb930] px-4 py-1 rounded-sm text-white cursor-pointer hover:bg-[#002e5a] transition-all duration-300'>GET STARTED</button>
             </div>
-            <div className='bg-gray-50 px-[100px] py-[40px]'>
+            <div className='bg-gray-50 sm:px-[100px] px-[60px] py-[40px]'>
                 <h1 className='text-2xl text-[#002e5a] text-center mb-[40px]'>Some of the immigration options we assist with</h1>
                 {/* Immigration options */}
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-[60px]'>
@@ -144,7 +144,7 @@ const VisaApplication = () => {
                             transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                             viewport={{ once: false, amount: 0.2 }}
                         >
-                            <h1 className="text-[#002e5a] text-xl font-bold">{item.title}</h1>
+                            <h1 className="text-[#002e5a] sm:text-xl font-bold">{item.title}</h1>
                             <hr className="h-1 bg-[#fdb930] text-[#fdb930] w-[30px]" />
                             <p className="text-gray-600">{item.text}</p>
                             <span className="underline text-gray-600 text-sm mt-auto">

@@ -17,9 +17,9 @@ const BusinessVisa = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-white px-[80px] py-[40px]">
-            <div className="flex justify-between items-center mb-[40px] border-b border-gray-200 pb-4">
-                <div className="flex items-center flex-wrap gap-2 w-[70%]">
+        <div className="bg-white sm:px-[80px] px-[40px] py-[40px]">
+            <div className="flex sm:flex-row flex-col sm:gap-0 gap-4 justify-between items-center mb-[40px] border-b border-gray-200 pb-4">
+                <div className="flex items-center flex-wrap gap-2 sm:w-[70%]">
                     {immigrationOptions.map((item, index) => {
                         const isActive = location.pathname === item.link;
                         return (
@@ -39,7 +39,7 @@ const BusinessVisa = () => {
                 <button onClick={() => navigate('eligibility-test')} className="bg-[#fdb930] px-4 py-1 text-white cursor-pointer rounded-sm text-sm hover:bg-[#002e5a] duration-300 transition-all">APPLY NOW</button>
             </div>
             <div className="bg-white pb-[40px]">
-                <h1 className="text-3xl font-semibold text-[#002e5a] mb-4">Visitor Visa</h1>
+                <h1 className="text-3xl font-semibold text-[#002e5a] mb-4">Business Visa</h1>
                 <div className="flex flex-col gap-4 mb-4">
                     <p className="text-gray-600">Visitors Visas are for international travellers (citizens of other countries) who have permanent residence outside South Africa and who wish to visit the country on a temporary 90 day Visitor’s Visa. A Visitor Visa is usually valid for 3 months unless the visa has been applied for on other grounds. The visa can be extended for a further 3 months, as long as the application is made 60 days prior to the expiry of the current Visitor Visa and as long as there are no restrictions. A long stay Visitor Visa allows a foreign national to remain in South Africa for a period exceeding 3 months, but not exceeding 3 years.There are two kinds of Visitors Visas:</p>
                     <ul className="list-decimal ml-6 text-gray-600">

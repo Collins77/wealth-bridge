@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const EligibilityTest = () => {
     return (
         <div>
-            <div className="px-[60px] py-[40px] bg-[#002e5a] flex flex-col gap-3 overflow-hidden">
+            <div className="sm:px-[60px] px-[40px] py-[40px] bg-[#002e5a] flex flex-col gap-3 overflow-hidden">
                 {/* ABOUT Tag */}
                 <motion.p
                     className="text-[#fdb930] text-sm border border-gray-200 rounded-xl px-2 py-1 w-fit"
@@ -17,7 +17,7 @@ const EligibilityTest = () => {
 
                 {/* Heading */}
                 <motion.h1
-                    className="text-white text-3xl"
+                    className="text-white sm:text-3xl text-xl"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
@@ -35,7 +35,7 @@ const EligibilityTest = () => {
 
                 {/* Paragraph */}
                 <motion.p
-                    className="text-white"
+                    className="text-white sm:text-base text-sm"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
@@ -43,10 +43,10 @@ const EligibilityTest = () => {
                     Kickstart your visa or residency permit application by completing our immigration eligibility assessment. Once we confirm your eligibility, we will assist you through the process. If not eligible at this stage, we will provide you with advice about your immigration or visa application options.
                 </motion.p>
             </div>
-            <div className='px-[60px] py-[40px] bg-gray-50'>
+            <div className='sm:px-[60px] px-[40px] py-[40px] bg-gray-50'>
                 <form action="" className='bg-white shadow-md p-[40px]'>
                     <h1 className='text-[#002e5a] text-2xl font-semibold text-center mb-[30px]'>You’re one step closer…</h1>
-                    <div className='grid grid-cols-2 gap-4 mb-5'>
+                    <div className='sm:grid sm:grid-cols-2 flex flex-col gap-4 mb-5'>
                         <div className='flex flex-col gap-2'>
                             <label className='text-gray-500 font-semibold' htmlFor="">First Name<span className='text-red-500'>*</span></label>
                             <input type="text" className='border border-gray-200 rounded-md p-1 outline-none' required />

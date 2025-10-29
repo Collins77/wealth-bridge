@@ -17,9 +17,9 @@ const RelativeVisa = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-white px-[80px] py-[40px]">
-            <div className="flex justify-between items-center mb-[40px] border-b border-gray-200 pb-4">
-                <div className="flex items-center flex-wrap gap-2 w-[70%]">
+        <div className="bg-white sm:px-[80px] px-[40px] py-[40px]">
+            <div className="flex sm:flex-row flex-col sm:gap-0 gap-4 justify-between items-center mb-[40px] border-b border-gray-200 pb-4">
+                <div className="flex items-center flex-wrap gap-2 sm:w-[70%]">
                     {immigrationOptions.map((item, index) => {
                         const isActive = location.pathname === item.link;
                         return (
